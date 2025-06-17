@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # Base de données PostgreSQL
+  postgres:
+    image: postgres:15
+    container_name: buffet-postgres
+    environment:
+      POSTGRES_DB: buffet_db
+      POSTGRES_USER: buffet_user
+      POSTGRES_PASSWORD: buffet_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - buffet-network
+
+  # Application Spring Boot
+  buffet-app:
+    build: .
+    container_name: buffet-spring-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/buffet_db
+      SPRING_DATASOURCE_USERNAME: buffet_user
+      SPRING_DATASOURCE_PASSWORD: buffet_password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: create-drop
+      SPRING_JPA_SHOW_SQL: "false"
+    depends_on:
+      - postgres
+    networks:
+      - buffet-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  buffet-network:
+    driver: bridge 
