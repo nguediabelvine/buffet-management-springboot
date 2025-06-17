@@ -1,0 +1,232 @@
+# Requirements pour l'Application de Gestion de Buffets
+# ===================================================
+
+# PRÉREQUIS SYSTÈME
+# =================
+
+## Java Development Kit (JDK)
+- Java 17 ou supérieur
+- OpenJDK 17 recommandé
+
+## Maven
+- Apache Maven 3.6 ou supérieur
+
+## Base de données
+- PostgreSQL 12 ou supérieur
+
+## Système d'exploitation
+- Linux (Ubuntu 20.04+ recommandé)
+- macOS 10.15+
+- Windows 10+
+
+# INSTALLATION DES PRÉREQUIS
+# ==========================
+
+## Sur Ubuntu/Debian
+```bash
+# Mettre à jour le système
+sudo apt update && sudo apt upgrade -y
+
+# Installer Java 17
+sudo apt install openjdk-17-jdk -y
+
+# Installer Maven
+sudo apt install maven -y
+
+# Installer PostgreSQL
+sudo apt install postgresql postgresql-contrib -y
+
+# Démarrer PostgreSQL
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+```
+
+## Sur CentOS/RHEL/Fedora
+```bash
+# Installer Java 17
+sudo dnf install java-17-openjdk-devel -y
+
+# Installer Maven
+sudo dnf install maven -y
+
+# Installer PostgreSQL
+sudo dnf install postgresql postgresql-server -y
+
+# Initialiser et démarrer PostgreSQL
+sudo postgresql-setup initdb
+sudo systemctl start postgresql
+sudo systemctl enable postgresql
+```
+
+## Sur macOS (avec Homebrew)
+```bash
+# Installer Homebrew si pas déjà fait
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Installer Java 17
+brew install openjdk@17
+
+# Installer Maven
+brew install maven
+
+# Installer PostgreSQL
+brew install postgresql
+
+# Démarrer PostgreSQL
+brew services start postgresql
+```
+
+## Sur Windows
+1. Télécharger et installer Java 17 depuis Oracle ou OpenJDK
+2. Télécharger et installer Maven depuis https://maven.apache.org/
+3. Télécharger et installer PostgreSQL depuis https://www.postgresql.org/
+
+# VÉRIFICATION DES INSTALLATIONS
+# ==============================
+
+```bash
+# Vérifier Java
+java -version
+# Doit afficher : openjdk version "17.x.x"
+
+# Vérifier Maven
+mvn -version
+# Doit afficher : Apache Maven 3.x.x
+
+# Vérifier PostgreSQL
+psql --version
+# Doit afficher : psql (PostgreSQL) 12.x ou supérieur
+```
+
+# CONFIGURATION DE LA BASE DE DONNÉES
+# ===================================
+
+```sql
+-- Se connecter à PostgreSQL
+sudo -u postgres psql
+
+-- Créer la base de données
+CREATE DATABASE buffet_db;
+
+-- Créer l'utilisateur
+CREATE USER buffet_user WITH PASSWORD 'buffet_password';
+
+-- Donner les privilèges
+GRANT ALL PRIVILEGES ON DATABASE buffet_db TO buffet_user;
+
+-- Se connecter à la base
+\c buffet_db
+
+-- Donner les privilèges sur le schéma public
+GRANT ALL ON SCHEMA public TO buffet_user;
+
+-- Quitter PostgreSQL
+\q
+```
+
+# OUTILS DE DÉVELOPPEMENT RECOMMANDÉS
+# ===================================
+
+## IDE
+- IntelliJ IDEA (Community ou Ultimate)
+- Eclipse IDE for Enterprise Java Developers
+- Visual Studio Code avec extensions Java
+
+## Outils de test API
+- Postman (recommandé)
+- Insomnia
+- cURL (inclus dans la plupart des systèmes)
+
+## Outils de base de données
+- pgAdmin (interface graphique PostgreSQL)
+- DBeaver (client universel de base de données)
+
+# INSTALLATION DES OUTILS
+# =======================
+
+## Postman
+```bash
+# Sur Ubuntu/Debian
+sudo snap install postman
+
+# Sur macOS
+brew install --cask postman
+
+# Sur Windows
+# Télécharger depuis https://www.postman.com/downloads/
+```
+
+## pgAdmin
+```bash
+# Sur Ubuntu/Debian
+sudo apt install pgadmin4 -y
+
+# Sur macOS
+brew install --cask pgadmin4
+
+# Sur Windows
+# Télécharger depuis https://www.pgadmin.org/download/
+```
+
+# VARIABLES D'ENVIRONNEMENT
+# =========================
+
+```bash
+# Ajouter à votre ~/.bashrc ou ~/.zshrc
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+export MAVEN_HOME=/usr/share/maven
+export PATH=$PATH:$MAVEN_HOME/bin
+```
+
+# PORTS UTILISÉS
+# ==============
+
+- 8080 : Application Spring Boot
+- 5432 : PostgreSQL (par défaut)
+- 8081 : pgAdmin (si installé)
+
+# VÉRIFICATION FINALE
+# ===================
+
+```bash
+# Tester la compilation du projet
+mvn clean compile
+
+# Tester le lancement de l'application
+mvn spring-boot:run
+
+# Vérifier l'accès à l'API
+curl http://localhost:8080/api/categories
+
+# Vérifier Swagger UI
+# Ouvrir http://localhost:8080/swagger-ui.html dans le navigateur
+```
+
+# DÉPENDANCES MAVEN (déjà incluses dans pom.xml)
+# ===============================================
+
+- Spring Boot Starter Web
+- Spring Boot Starter Data JPA
+- Spring Boot Starter JDBC
+- PostgreSQL Driver
+- Spring Boot Starter Validation
+- SpringDoc OpenAPI UI
+- Jackson (pour JSON)
+
+# NOTES IMPORTANTES
+# =================
+
+1. Assurez-vous que le port 8080 est libre avant de lancer l'application
+2. PostgreSQL doit être démarré avant de lancer l'application
+3. Les données initiales (200+ aliments) sont importées automatiquement au premier démarrage
+4. L'application utilise H2 en mode mémoire si PostgreSQL n'est pas disponible (pour les tests)
+
+# SUPPORT
+# =======
+
+En cas de problème :
+1. Vérifier les logs de l'application
+2. Vérifier la connexion à PostgreSQL
+3. Vérifier les versions des prérequis
+4. Consulter la documentation Spring Boot 

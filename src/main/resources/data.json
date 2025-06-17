@@ -1,0 +1,470 @@
+{
+  "categories": [
+    {
+      "nom": "Fruits",
+      "description": "Fruits frais et secs"
+    },
+    {
+      "nom": "Légumes",
+      "description": "Légumes frais et cuits"
+    },
+    {
+      "nom": "Viandes",
+      "description": "Viandes rouges et blanches"
+    },
+    {
+      "nom": "Poissons",
+      "description": "Poissons et fruits de mer"
+    },
+    {
+      "nom": "Céréales",
+      "description": "Céréales et produits céréaliers"
+    },
+    {
+      "nom": "Produits laitiers",
+      "description": "Lait, fromages et yaourts"
+    },
+    {
+      "nom": "Épices et condiments",
+      "description": "Épices, herbes et condiments"
+    },
+    {
+      "nom": "Noix et graines",
+      "description": "Noix, graines et oléagineux"
+    },
+    {
+      "nom": "Boissons",
+      "description": "Boissons et jus"
+    },
+    {
+      "nom": "Pâtisseries",
+      "description": "Pâtisseries et desserts"
+    }
+  ],
+  "aliments": [
+    {
+      "nom": "Pomme",
+      "description": "Pomme rouge fraîche et croquante",
+      "calories_per_100g": 52.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Banane",
+      "description": "Banane jaune mûre et sucrée",
+      "calories_per_100g": 89.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Orange",
+      "description": "Orange juteuse et vitaminée",
+      "calories_per_100g": 47.0,
+      "allergies": "Allergie aux agrumes possible",
+      "image_url": "https://images.unsplash.com/photo-1547514701-42782101795e?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Fraise",
+      "description": "Fraise rouge et parfumée",
+      "calories_per_100g": 32.0,
+      "allergies": "Allergie aux fraises possible",
+      "image_url": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Raisin",
+      "description": "Raisin noir ou blanc",
+      "calories_per_100g": 62.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Kiwi",
+      "description": "Kiwi vert et acidulé",
+      "calories_per_100g": 61.0,
+      "allergies": "Allergie au kiwi possible",
+      "image_url": "https://images.unsplash.com/photo-1585059891204-7503a6c2d0b0?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Ananas",
+      "description": "Ananas frais et sucré",
+      "calories_per_100g": 50.0,
+      "allergies": "Allergie à l'ananas possible",
+      "image_url": "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Mangue",
+      "description": "Mangue mûre et parfumée",
+      "calories_per_100g": 60.0,
+      "allergies": "Allergie à la mangue possible",
+      "image_url": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Poire",
+      "description": "Poire juteuse et douce",
+      "calories_per_100g": 57.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Pêche",
+      "description": "Pêche mûre et parfumée",
+      "calories_per_100g": 39.0,
+      "allergies": "Allergie aux pêches possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Fruits"
+    },
+    {
+      "nom": "Carotte",
+      "description": "Carotte orange fraîche et croquante",
+      "calories_per_100g": 41.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1447175008436-170170e8a4e3?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Brocoli",
+      "description": "Brocoli vert frais et nutritif",
+      "calories_per_100g": 34.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1459411621453-7b03977f4bfc?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Tomate",
+      "description": "Tomate rouge mûre",
+      "calories_per_100g": 18.0,
+      "allergies": "Allergie aux tomates possible",
+      "image_url": "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Concombre",
+      "description": "Concombre frais et rafraîchissant",
+      "calories_per_100g": 16.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Poivron",
+      "description": "Poivron rouge, jaune ou vert",
+      "calories_per_100g": 20.0,
+      "allergies": "Allergie aux poivrons possible",
+      "image_url": "https://images.unsplash.com/photo-1525607551316-5a9e2a1a3c1a?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Oignon",
+      "description": "Oignon blanc ou rouge",
+      "calories_per_100g": 40.0,
+      "allergies": "Allergie aux oignons possible",
+      "image_url": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Ail",
+      "description": "Ail frais et aromatique",
+      "calories_per_100g": 149.0,
+      "allergies": "Allergie à l'ail possible",
+      "image_url": "https://images.unsplash.com/photo-1540148426945-eebf943c5340?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Épinards",
+      "description": "Épinards frais et verts",
+      "calories_per_100g": 23.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Salade",
+      "description": "Salade verte fraîche",
+      "calories_per_100g": 15.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Courgette",
+      "description": "Courgette verte fraîche",
+      "calories_per_100g": 17.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=400",
+      "categorie_nom": "Légumes"
+    },
+    {
+      "nom": "Poulet",
+      "description": "Filet de poulet blanc maigre",
+      "calories_per_100g": 165.0,
+      "allergies": "Allergie aux protéines de volaille possible",
+      "image_url": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400",
+      "categorie_nom": "Viandes"
+    },
+    {
+      "nom": "Bœuf",
+      "description": "Steak de bœuf maigre",
+      "calories_per_100g": 250.0,
+      "allergies": "Allergie aux protéines de bœuf possible",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+      "categorie_nom": "Viandes"
+    },
+    {
+      "nom": "Porc",
+      "description": "Viande de porc maigre",
+      "calories_per_100g": 242.0,
+      "allergies": "Allergie aux protéines de porc possible",
+      "image_url": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400",
+      "categorie_nom": "Viandes"
+    },
+    {
+      "nom": "Agneau",
+      "description": "Viande d'agneau tendre",
+      "calories_per_100g": 294.0,
+      "allergies": "Allergie aux protéines d'agneau possible",
+      "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400",
+      "categorie_nom": "Viandes"
+    },
+    {
+      "nom": "Dinde",
+      "description": "Filet de dinde maigre",
+      "calories_per_100g": 189.0,
+      "allergies": "Allergie aux protéines de volaille possible",
+      "image_url": "https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=400",
+      "categorie_nom": "Viandes"
+    },
+    {
+      "nom": "Saumon",
+      "description": "Filet de saumon frais",
+      "calories_per_100g": 208.0,
+      "allergies": "Allergie aux poissons possible",
+      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400",
+      "categorie_nom": "Poissons"
+    },
+    {
+      "nom": "Thon",
+      "description": "Thon frais ou en conserve",
+      "calories_per_100g": 144.0,
+      "allergies": "Allergie aux poissons possible",
+      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400",
+      "categorie_nom": "Poissons"
+    },
+    {
+      "nom": "Cabillaud",
+      "description": "Filet de cabillaud frais",
+      "calories_per_100g": 82.0,
+      "allergies": "Allergie aux poissons possible",
+      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400",
+      "categorie_nom": "Poissons"
+    },
+    {
+      "nom": "Crevettes",
+      "description": "Crevettes fraîches",
+      "calories_per_100g": 99.0,
+      "allergies": "Allergie aux crustacés possible",
+      "image_url": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400",
+      "categorie_nom": "Poissons"
+    },
+    {
+      "nom": "Riz basmati",
+      "description": "Riz basmati blanc parfumé",
+      "calories_per_100g": 130.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
+      "categorie_nom": "Céréales"
+    },
+    {
+      "nom": "Quinoa",
+      "description": "Quinoa blanc bio",
+      "calories_per_100g": 120.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
+      "categorie_nom": "Céréales"
+    },
+    {
+      "nom": "Pâtes",
+      "description": "Pâtes alimentaires",
+      "calories_per_100g": 131.0,
+      "allergies": "Allergie au gluten possible",
+      "image_url": "https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?w=400",
+      "categorie_nom": "Céréales"
+    },
+    {
+      "nom": "Pain complet",
+      "description": "Pain complet aux céréales",
+      "calories_per_100g": 247.0,
+      "allergies": "Allergie au gluten possible",
+      "image_url": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",
+      "categorie_nom": "Céréales"
+    },
+    {
+      "nom": "Avoine",
+      "description": "Flocons d'avoine",
+      "calories_per_100g": 389.0,
+      "allergies": "Allergie à l'avoine possible",
+      "image_url": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400",
+      "categorie_nom": "Céréales"
+    },
+    {
+      "nom": "Fromage de chèvre",
+      "description": "Fromage de chèvre frais",
+      "calories_per_100g": 264.0,
+      "allergies": "Allergie au lactose possible",
+      "image_url": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400",
+      "categorie_nom": "Produits laitiers"
+    },
+    {
+      "nom": "Yaourt grec",
+      "description": "Yaourt grec nature",
+      "calories_per_100g": 59.0,
+      "allergies": "Allergie au lactose possible",
+      "image_url": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400",
+      "categorie_nom": "Produits laitiers"
+    },
+    {
+      "nom": "Lait",
+      "description": "Lait de vache frais",
+      "calories_per_100g": 42.0,
+      "allergies": "Allergie au lactose possible",
+      "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400",
+      "categorie_nom": "Produits laitiers"
+    },
+    {
+      "nom": "Beurre",
+      "description": "Beurre doux",
+      "calories_per_100g": 717.0,
+      "allergies": "Allergie au lactose possible",
+      "image_url": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400",
+      "categorie_nom": "Produits laitiers"
+    },
+    {
+      "nom": "Curry",
+      "description": "Mélange d'épices curry",
+      "calories_per_100g": 325.0,
+      "allergies": "Allergie aux épices possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Épices et condiments"
+    },
+    {
+      "nom": "Basilic",
+      "description": "Basilic frais",
+      "calories_per_100g": 22.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Épices et condiments"
+    },
+    {
+      "nom": "Poivre",
+      "description": "Poivre noir moulu",
+      "calories_per_100g": 251.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Épices et condiments"
+    },
+    {
+      "nom": "Sel",
+      "description": "Sel de table",
+      "calories_per_100g": 0.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Épices et condiments"
+    },
+    {
+      "nom": "Huile d'olive",
+      "description": "Huile d'olive extra vierge",
+      "calories_per_100g": 884.0,
+      "allergies": "Allergie aux olives possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Épices et condiments"
+    },
+    {
+      "nom": "Amandes",
+      "description": "Amandes fraîches",
+      "calories_per_100g": 579.0,
+      "allergies": "Allergie aux fruits à coque possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Noix et graines"
+    },
+    {
+      "nom": "Noix",
+      "description": "Noix fraîches",
+      "calories_per_100g": 654.0,
+      "allergies": "Allergie aux fruits à coque possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Noix et graines"
+    },
+    {
+      "nom": "Graines de tournesol",
+      "description": "Graines de tournesol",
+      "calories_per_100g": 584.0,
+      "allergies": "Allergie aux graines possible",
+      "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400",
+      "categorie_nom": "Noix et graines"
+    },
+    {
+      "nom": "Eau",
+      "description": "Eau minérale",
+      "calories_per_100g": 0.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "categorie_nom": "Boissons"
+    },
+    {
+      "nom": "Jus d'orange",
+      "description": "Jus d'orange frais",
+      "calories_per_100g": 45.0,
+      "allergies": "Allergie aux agrumes possible",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "categorie_nom": "Boissons"
+    },
+    {
+      "nom": "Thé vert",
+      "description": "Thé vert nature",
+      "calories_per_100g": 1.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "categorie_nom": "Boissons"
+    },
+    {
+      "nom": "Café",
+      "description": "Café noir",
+      "calories_per_100g": 2.0,
+      "allergies": "Aucune allergie connue",
+      "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400",
+      "categorie_nom": "Boissons"
+    },
+    {
+      "nom": "Chocolat noir",
+      "description": "Chocolat noir 70%",
+      "calories_per_100g": 598.0,
+      "allergies": "Allergie au cacao possible",
+      "image_url": "https://images.unsplash.com/photo-1548907040-4baa636b0c8b?w=400",
+      "categorie_nom": "Pâtisseries"
+    },
+    {
+      "nom": "Gâteau",
+      "description": "Gâteau au chocolat",
+      "calories_per_100g": 371.0,
+      "allergies": "Allergie au gluten et aux œufs possible",
+      "image_url": "https://images.unsplash.com/photo-1548907040-4baa636b0c8b?w=400",
+      "categorie_nom": "Pâtisseries"
+    },
+    {
+      "nom": "Croissant",
+      "description": "Croissant au beurre",
+      "calories_per_100g": 406.0,
+      "allergies": "Allergie au gluten et au lactose possible",
+      "image_url": "https://images.unsplash.com/photo-1548907040-4baa636b0c8b?w=400",
+      "categorie_nom": "Pâtisseries"
+    }
+  ]
+} 
